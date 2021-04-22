@@ -1,0 +1,89 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: hsl(240, 38%, 20%);
+}
+.container,
+.left-portion,
+.right-portion,
+.navigation-btn {
+  display: flex;
+}
+.container {
+  margin: 5%;
+  flex-direction: row;
+  background: url("/images/pattern-curve.svg") left bottom no-repeat;
+}
+.left-portion,
+.right-portion {
+  flex-direction: column;
+}
+.left-portion {
+  margin: 12% 0% 0%;
+  flex: 48%;
+}
+.left-portion > img {
+  position: absolute;
+  left: 24%;
+  transform: translateX(-20%);
+}
+.about-text {
+  margin: 12% 0% 0%;
+  font-size: 29px;
+  font-weight: 300;
+  transform: translateX(25%);
+}
+.right-portion {
+  flex: 52%;
+  background-image: url("/images/pattern-bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.profile-img > img {
+  width: 75%;
+  margin: 12%;
+  border-radius: 5px;
+  box-shadow: 0px 26px 30px -22px rgba(62, 82, 183, 0.7);
+}
+.navigation-btn {
+  position: relative;
+  bottom: 15%;
+  left: 20%;
+  transform: translate(-1%, -1%);
+  border-radius: 25px;
+}
+.button {
+  padding: 2% 3%;
+  background-color: #fff;
+  border-color: transparent;
+}
+.prev {
+  border-radius: 25px 0px 0px 25px;
+}
+.next {
+  border-radius: 0px 25px 25px 0px;
+}
+.profile-name {
+  padding-top: 5%;
+}
+.profile-name > p {
+  display: flex;
+  flex-direction: row;
+  transform: translateX(25%);
+  font-weight: 700;
+}
+span {
+  color: hsl(240, 18%, 77%);
+  font-weight: 500;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: rgb(62, 82, 163);
+}
