@@ -94,6 +94,7 @@ span {
   .container {
     margin: 16% 8% 32%;
     flex-direction: column-reverse;
+    overflow: hidden;
   }
   .left-portion,
   .right-portion {
