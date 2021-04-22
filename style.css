@@ -1,9 +1,10 @@
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 body {
+  background: url("/images/pattern-curve.svg") left bottom no-repeat;
   font-family: "Inter", sans-serif;
   color: hsl(240, 38%, 20%);
 }
@@ -14,9 +15,8 @@ body {
   display: flex;
 }
 .container {
-  margin: 5%;
+  margin: 5% 5% 0%;
   flex-direction: row;
-  background: url("/images/pattern-curve.svg") left bottom no-repeat;
 }
 .left-portion,
 .right-portion {
@@ -86,4 +86,48 @@ span {
 }
 .attribution a {
   color: rgb(62, 82, 163);
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    background-size: contain;
+  }
+  .container {
+    margin: 16% 8% 32%;
+    flex-direction: column-reverse;
+  }
+  .left-portion,
+  .right-portion {
+    flex: 100%;
+  }
+  .left-portion {
+    margin-top: 0%;
+  }
+  .about-text {
+    text-align: center;
+    transform: translateX(0%);
+    font-size: 18px;
+  }
+  .navigation-btn {
+    bottom: 0%;
+    left: 40%;
+    transform: translate(-1%, -175%);
+  }
+  .next > img,
+  .prev > img {
+    width: 75%;
+  }
+  .left-portion > img {
+    width: 17%;
+    left: 45%;
+    transform: translate(-16%, 5%);
+  }
+  .profile-name {
+    padding-top: 10%;
+  }
+  .profile-name > p {
+    flex-direction: column;
+    flex: 100%;
+    transform: translateX(0%);
+    text-align: center;
+  }
 }
