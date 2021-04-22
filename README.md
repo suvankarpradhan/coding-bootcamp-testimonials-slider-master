@@ -26,7 +26,8 @@ Users should be able to:
 ### Screenshot
 
 ![desktop-img](./screenshot/desktop.png)
-![mobile-img](./screenshot/mobile.png)
+![mobile-img](./screenshot/mobile1.png)
+![mobile-img](./screenshot/mobile2.png)
 
 ### Links
 
