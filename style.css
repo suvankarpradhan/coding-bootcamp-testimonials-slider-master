@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background: url("/images/pattern-curve.svg") left bottom no-repeat;
+  background: url("images/pattern-curve.svg") left bottom no-repeat;
   font-family: "Inter", sans-serif;
   color: hsl(240, 38%, 20%);
 }
@@ -39,7 +39,7 @@ body {
 }
 .right-portion {
   flex: 52%;
-  background-image: url("/images/pattern-bg.svg");
+  background-image: url("images/pattern-bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
